@@ -1,7 +1,9 @@
 export function getRefs() {
     return {
-        imput: document.querySelector('#search-form'),
-        gall: document.querySelector('.gallery'),
+        searchForm: document.querySelector('#search-form'),
+        gallery: document.querySelector('.gallery'),
+        loadMoreBtn: document.querySelector('.load-more'),
+        input: document.querySelector('input'),
         
     };
 };
