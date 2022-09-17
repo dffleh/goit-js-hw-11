@@ -24,7 +24,7 @@ async function onSubmit(event) {
         return;
     }
     const response = await fetchFoto(submitValue, pageforBtn)
-    currentHits = response.hits.length;
+    totalHitsValue = response.hits.length;
     console.dir(response);
 
     if (response.totalHits > 0) {
