@@ -30,6 +30,7 @@ async function onSubmit(event) {
     pageforBtn = 1;
 
     if (!submitValue) {
+        refs.loadMoreBtn.classList.add('is-hidden');
         clearGalleryDiv();
         return;
     }
