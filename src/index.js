@@ -57,6 +57,6 @@ async function loadMore() {
 
     if (totalHitsValue >= response.totalHits) {
         refs.loadMoreBtn.classList.add('is-hidden');
-        Notify.info("We're sorry, but you've reached the end of search results.");
+        Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
     }
 }
