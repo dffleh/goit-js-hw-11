@@ -11,16 +11,17 @@
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <form class="search-form" id="search-form">
       <input
+        class="search-form__input"
         type="text"
         name="searchQuery"
         autocomplete="off"
         placeholder="Search images..."
       />
       
-      <button type="submit">Search</button>
+      <button class="btn search-form__btn" type="submit">Search</button>
     </form>
     <div class="gallery"></div>
-    <button type="button" class="load-more">Load more</button>
+    <button class="btn btn_load-more is-hidden" type="button" class="load-more">Load more</button>
     <!-- <include src="./partials/example.html"></include> -->
   </body>
 </html>

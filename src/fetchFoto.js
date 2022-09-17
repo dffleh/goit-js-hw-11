@@ -4,13 +4,14 @@ const URL = 'https://pixabay.com/api/';
 const KEY = '29948527-2314e3f34b81248b29ec7b1b5';
 const PARAMETR = '&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=';
 
-export async function fetchFoto(q,pageforBtn) {
+export async function fetchFoto(submitValue,pageforBtn) {
     try {
-        return await axios.get(`${URL}?key=${KEY}&q=${q}${PARAMETR}${pageforBtn}`).then(response => response.data);
+        return await axios.get(`${URL}?key=${KEY}&q=${submitValue}${PARAMETR}${pageforBtn}`).then(response => response.data);
         
     } catch (error) {
         console.error(error);
     }
+    
     // return fetch(`${URL}?key=${KEY}&q=${q}${PARAMETR}`).then(response => {
     //     if (!response.ok || response.status === 404) {
     //         throw new Error(response.status);
