@@ -30,7 +30,7 @@ async function onSubmit(event) {
     if (response.totalHits > 0) {
         clearGalleryDiv()
         Notiflix.Notify.success(`Hooray! We found ${response.totalHits} images.`)
-        Notiflix.Notify.success('Slava Ukraine');
+        Notiflix.Notify.success('Glory to Ukraine');
         renderGalleryDiv(response.hits);
     }
 
@@ -44,7 +44,7 @@ async function onSubmit(event) {
     if (response.totalHits === 0) {
         clearGalleryDiv();
         Notiflix.Notify.failure('Sorry, there are no images matching your search query. Please try again.');
-        Notiflix.Notify.success('Slava Ukraine');
+        Notiflix.Notify.success('Glory to Ukraine');
         refs.loadMoreBtn.classList.add('is-hidden');
     }
 }
